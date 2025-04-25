@@ -15,8 +15,7 @@ provider "azurerm" {
   features {}
 }
 
-# a1a-51941-tst-vm-ccasora-uks-01
-# a1a-51941-dev-rg-ccasqaa-uks-01
+
 
 
 # Create resources

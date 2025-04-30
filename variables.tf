@@ -18,5 +18,5 @@ variable "admin_username" {
 
 
 variable "admin_password" {
-  default = "TS-va-venila-123#"
+  default = "your_password"
 }

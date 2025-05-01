@@ -185,7 +185,7 @@ resource "azurerm_linux_virtual_machine" "sts-vm-1inux-1-uks-href" {
   admin_ssh_key {
     username   = var.admin_username
     # public_key = file("~/.ssh/id_rsa.pub")
-    public_key = file("./.ssh/sts_vm_1.pub") # set location of your public key ?
+    public_key = file("./.ssh/sts_vm_1.pub") # set location of your public key
   }
   
   

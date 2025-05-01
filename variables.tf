@@ -19,5 +19,5 @@ variable "admin_username" {
 
 
 variable "admin_password" {
-  default = "your password here"
+  default = "your-password"
 }

@@ -179,10 +179,16 @@ resource "azurerm_linux_virtual_machine" "sts-vm-1inux-1-uks-href" {
 
   
   admin_username                  = var.admin_username
-  admin_password                  = var.admin_password
-  disable_password_authentication = false
-
-
+  # admin_password                  = var.admin_password
+  # disable_password_authentication = false
+  
+  admin_ssh_key {
+    username   = var.admin_username
+    # public_key = file("~/.ssh/id_rsa.pub")
+    public_key = file("./.ssh/sts_vm_1.pub") # set location of your public key ?
+  }
+  
+  
   source_image_reference {
     publisher = "Canonical"
     offer     = "0001-com-ubuntu-server-jammy"
@@ -235,3 +241,4 @@ resource "azurerm_virtual_machine" "sts-vm-1inux-2-uks-href" {
     environment = "staging"
   }
 }
+
